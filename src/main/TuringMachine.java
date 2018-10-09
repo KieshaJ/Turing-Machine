@@ -58,7 +58,7 @@ public class TuringMachine {
 			iterationCount++;
 			
 			if(iterationCount > 500000) {
-				System.out.println("Ar testi? (1/0)");
+				System.out.println("Continue? (1/0)");
 				int x = in.nextInt();
 				
 				if(x == 1) {
@@ -72,9 +72,9 @@ public class TuringMachine {
 	};
 	
 	private static void greeting() {
-		System.out.println("Tiuringo masina");
+		System.out.println("Tiuring Machine");
 		System.out.println("----------------------------------");
-		System.out.println("Pasirinkite viena is keturiu failu(1-4) arba iveskite 0, jei norite nutraukti programos darba: ");
+		System.out.println("Choose one of the 4 files(1-4) or type in 0 to close the program: ");
 	}
 	
 	public static void main(String[] args) throws FileNotFoundException {
@@ -103,7 +103,7 @@ public class TuringMachine {
 					runFile(file4);
 					break;
 				case "0":
-					System.out.println("Viso gero!");
+					System.out.println("Goodbye!");
 					scanner.close();
 					System.exit(0);
 				default:
